@@ -59,7 +59,7 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 120px 0;
 }
 
 .section.no-top-padding {
@@ -143,6 +143,8 @@ body {
 /* HERO section */
 .hero {
   padding: 200px 0;
+  height: 600px;
+  margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -194,39 +196,31 @@ body {
 /* BENEFITS section */
 .benefits.list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 120px;
 }
 
 .benefits .item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  background: var(--cloud, #f4f4fd);
-  width: 264px;
-  height: 112px;
-  margin-bottom: 10px;
 }
 
 .antenna {
   width: 64px;
   height: 64px;
-  border-radius: 4px;
 }
 
 .benefits.list .icon {
-  width: 100%;
-  height: 100%;
-}
-
-.icon {
+  width: 264px;
+  height: 120px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8px;
+  background-color: var(--cloud);
+  border-radius: 4px;
 }
 
 .title {
@@ -316,13 +310,13 @@ body {
 .social-team {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 8px;
+  gap: 24px;
+  padding-top: 10px;
 }
 
 .icon-item {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 }
 
 .icon-item .link {
@@ -338,11 +332,13 @@ body {
 
 .icon-item .icon {
   fill: currentColor;
+  width: 16px;
+  height: 16px;
 }
 
 .icon-item .link:hover,
 .icon-item .link:focus {
-  background-color: var(--ocean);
+  background-color: var(--green);
 }
 
 /* CUSTOMERS section */
@@ -452,8 +448,9 @@ body {
 /* FOOTER section */
 .page-footer {
   background-color: var(--navyblue);
-  padding-left: 80px;
-  padding: 60px 0;
+  padding-left: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
 }
 
@@ -482,16 +479,33 @@ body {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -12px;
+  margin-left: -50px;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-top: 12px;
+  margin-left: 25px;
 }
 
 .footer-block {
-  margin-left: 160px;
+  margin-left: 123px;
+  margin-top: 12px;
 }
 
 .social-footer.list {
   display: flex;
   gap: 10px;
-  margin-top: 8px;
+  padding-top: 10px;
+  justify-content: flex-start;
+}
+
+.social-footer .icon {
+  height: 24px;
+  width: 24px;
+  fill: currentColor;
 }
 
 .social-footer .link:hover,
